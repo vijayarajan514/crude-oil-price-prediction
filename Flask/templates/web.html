@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CRUDE OIL PRICE PREDICTION</title>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="header">
+  
+<div class="topnav">  
+	<a   href="index.html">Home</a>
+	<a class="active" href="web.html">Predict</a>
+ </div>   
+</div>
+<div class="intro" >
+	<h1>CRUDE OIL PRICE PREDICTION</h1>
+</div>
+<div class="inputform">
+	<form action="{{ url_for('login')}}" method="post">
+	<input type="text"  id="year" name="year" class="input" placeholder="Enter the curde oil prices for the first 10 days"> 
+	<br><br>
+	
+	<input type="submit" value="Predict" onclick="login()" class="btin">
+	<br><br>
+	<h3>{{showcase}}</h3>
+	</form>
+</div>
+
+</body>
+</html>

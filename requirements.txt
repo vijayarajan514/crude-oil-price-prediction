@@ -1,0 +1,5 @@
+1.Install VS code
+2.Install python
+3.Type “pip install tensorflow” (make sure you are working on python 64 bit) 
+4.Type “pip install flask”.
+5.Type "pip install keras"
